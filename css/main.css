@@ -1,0 +1,130 @@
+@charset "UTF-8";
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Arimo", sans-serif;
+  --main-logo-font: "Tinos", serif;
+  --secondary-logo-font: "Brygada 1918", serif;
+  --yellow-color: #fff200;
+  --green-color: #104849;
+}
+
+/* Скидаємо верхні margin */
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Список без маркерів */
+.list-no-marker {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* Посилання без підкреслень */
+.link-no-decor {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  /* Готуємо підрозділ «Проєктні засади» для нового сайту «Сучасна шкільна бібліотека». Його головний зміст викладено в дописі керівника проекту Ю.Зражевського «Бібліотека в інформаційному забезпеченні школи». Пропонуємо повний текст документа. */
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 420px) {
+  .container {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.header__content {
+  /* Rectangle 3 */
+  /* dark_green */
+  padding: 18px 50px 20px 50px;
+  background: #104849;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.logo__first-line {
+  margin-left: 30px;
+  font-family: var(--secondary-logo-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--yellow-color);
+}
+.logo__list {
+  /* СУЧАСНА ШКІЛЬНА БІБЛІОТЕКА */
+}
+.logo__link {
+  font-family: var(--main-logo-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  /* white */
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.logo__link--first-line {
+  font-size: 24px;
+  line-height: 1.167;
+}
+.logo__second-line {
+  font-family: var(--main-logo-font);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33;
+  /* yellow */
+  color: var(--yellow-color);
+  text-shadow: 0px 0px 8px #104849, 0px 0px 10px #104849, 0px 0px 14px #104849, 0px 0px 4px #104849, 0px 0px 4px #104849;
+}
+
+.nav__link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  /* dark_green */
+  color: var(--green-color);
+}/*# sourceMappingURL=main.css.map */

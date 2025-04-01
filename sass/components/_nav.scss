@@ -1,0 +1,16 @@
+.nav {
+  &__list {
+  }
+  &__item {
+  }
+  &__link {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+
+    /* dark_green */
+    color: var(--green-color);
+  }
+}

@@ -1,0 +1,27 @@
+/* Скидаємо верхні margin */
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Список без маркерів */
+.list-no-marker {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* Посилання без підкреслень */
+.link-no-decor {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
