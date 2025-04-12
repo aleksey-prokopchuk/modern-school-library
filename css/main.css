@@ -227,7 +227,7 @@ body {
   background-color: var(--green-color-opacity);
   font-weight: 500;
 }
-.nav__link__link:hover, .nav__link__link:focus {
+.nav__link:hover, .nav__link:focus {
   background-color: var(--green-color-opacity);
   font-weight: 500;
 }
