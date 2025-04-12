@@ -6,6 +6,11 @@
   --secondary-logo-font: "Brygada 1918", serif;
   --yellow-color: #fff200;
   --green-color: #104849;
+  --white-color: #fff;
+  --black-color: #000;
+  --gray-color: #ededed;
+  --dark-blue-color: #0000ff;
+  --green-color-opacity: rgba(16, 72, 73, 0.15);
 }
 
 /* Скидаємо верхні margin */
@@ -40,9 +45,32 @@ body {
   /* Готуємо підрозділ «Проєктні засади» для нового сайту «Сучасна шкільна бібліотека». Його головний зміст викладено в дописі керівника проекту Ю.Зражевського «Бібліотека в інформаційному забезпеченні школи». Пропонуємо повний текст документа. */
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
+  font-size: 14px;
+  line-height: 1.143;
   color: #000000;
+}
+
+.main-title {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  text-transform: uppercase;
+  /* dark_blue */
+  color: var(--dark-blue-color);
+}
+
+.title {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: left;
+  /* dark_blue */
+  color: var(--dark-blue-color);
 }
 
 .container {
@@ -62,17 +90,60 @@ body {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1120px) {
   .container {
-    width: 1200px;
+    width: 1120px;
   }
 }
 
+.header {
+  background-color: #104849;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 420px) {
+  .header {
+    background-image: url(../images/header/bg-header_sm.jpg);
+    background-image: -webkit-image-set(url(../images/header/bg-header_sm.webp) 1x);
+  }
+}
+@media screen and (min-width: 420px) and (min-device-pixel-ratio: 2), screen and (min-width: 420px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 420px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 420px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 420px) and (min-resolution: 192dpi), screen and (min-width: 420px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../images/header/bg-header_sm@2x.jpg);
+    background-image: -webkit-image-set(url(../images/header/bg-header_sm@2x.webp) 2x);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(../images/header/bg-header_md.jpg);
+    background-image: -webkit-image-set(url(../images/header/bg-header_md.webp) 1x);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../images/header/bg-header_md@2x.jpg);
+    background-image: -webkit-image-set(url(../images/header/bg-header_md@2x.webp) 2x);
+  }
+}
+@media screen and (min-width: 1120px) {
+  .header {
+    background-image: url(../images/header/bg-header_lg.jpg);
+    background-image: -webkit-image-set(url(../images/header/bg-header_lg.webp) 1x);
+  }
+}
+@media screen and (min-width: 1120px) and (min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1120px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (min-resolution: 192dpi), screen and (min-width: 1120px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../images/header/bg-header_lg@2x.jpg);
+    background-image: -webkit-image-set(url(../images/header/bg-header_lg@2x.webp) 2x);
+  }
+}
 .header__content {
   /* Rectangle 3 */
   /* dark_green */
   padding: 18px 50px 20px 50px;
-  background: #104849;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .logo {
@@ -89,6 +160,11 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--yellow-color);
+}
+@media screen and (min-width: 420px) {
+  .logo__first-line {
+    /* Інноваційний проєкт */
+  }
 }
 .logo__list {
   /* СУЧАСНА ШКІЛЬНА БІБЛІОТЕКА */
@@ -119,11 +195,77 @@ body {
   text-shadow: 0px 0px 8px #104849, 0px 0px 10px #104849, 0px 0px 14px #104849, 0px 0px 4px #104849, 0px 0px 4px #104849;
 }
 
+.nav {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.nav__vraper {
+  /* Rectangle 1 */
+  background: linear-gradient(180deg, #568e8f 0%, #b4d2d4 40%);
+  /* Header desktop */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+.nav__item:not(:last-child) {
+  border-right: solid 1px var(--white-color);
+}
 .nav__link {
+  display: block;
+  padding: 10px 21px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 15px;
   line-height: 1.2;
+  text-align: center;
+  /* dark_green */
+  color: var(--green-color);
+}
+.nav__link--active {
+  background-color: var(--green-color-opacity);
+  font-weight: 500;
+}
+.nav__link__link:hover, .nav__link__link:focus {
+  background-color: var(--green-color-opacity);
+  font-weight: 500;
+}
+
+.content {
+  padding: 20px 0 10px 0;
+}
+.content__paragraph {
+  margin-bottom: 10px;
+  text-indent: 2.5em;
+}
+.content__list {
+  padding-left: 280px;
+}
+.content__item:last-child {
+  margin-bottom: 10px;
+}
+.content__img {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  float: left;
+  width: 200px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: var(--gray-color);
+}
+.footer__content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  /* identical to box height */
   text-align: center;
   /* dark_green */
   color: var(--green-color);

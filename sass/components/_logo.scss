@@ -14,6 +14,16 @@
     text-transform: uppercase;
 
     color: var(--yellow-color);
+    @include mq(mobile) {
+      /* Інноваційний проєкт */
+
+      // background-image: url(../images/header/bg-header_sm.jpg);
+      //   background-image: -webkit-image-set(url(../images/header/bg-header_sm.webp) 1x);
+      @include mq(retina) {
+        // background-image: url(../images/header/bg-header_sm@2x.jpg);
+        //   background-image: -webkit-image-set(url(../images/header/bg-header_sm@2x.webp) 2x);
+      }
+    }
   }
   &__list {
     /* СУЧАСНА ШКІЛЬНА БІБЛІОТЕКА */

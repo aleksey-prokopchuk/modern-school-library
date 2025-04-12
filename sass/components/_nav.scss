@@ -1,9 +1,33 @@
 .nav {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  &__vraper {
+    /* Rectangle 1 */
+
+    background: linear-gradient(180deg, #568e8f 0%, #b4d2d4 40%);
+
+    /* Header desktop */
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
   &__list {
+    display: flex;
+    justify-content: center;
   }
   &__item {
+    // &--active {
+
+    // }
+  }
+
+  &__item:not(:last-child) {
+    border-right: solid 1px var(--white-color);
+    // border-color: var(--white-color);
   }
   &__link {
+    display: block;
+    padding: 10px 21px;
+
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 15px;
@@ -12,5 +36,15 @@
 
     /* dark_green */
     color: var(--green-color);
+
+    &--active {
+      background-color: var(--green-color-opacity);
+      font-weight: 500;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: var(--green-color-opacity);
+      font-weight: 500;
+    }
   }
 }

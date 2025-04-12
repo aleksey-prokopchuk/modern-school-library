@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  height: 60px;
+
+  background-color: var(--gray-color);
+
+  &__content {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    /* identical to box height */
+    text-align: center;
+
+    /* dark_green */
+    color: var(--green-color);
+  }
+}

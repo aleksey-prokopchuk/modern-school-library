@@ -1,9 +1,58 @@
 .header {
+  // background: #104849;
+  background-color: #104849;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @include mq(mobile) {
+    background-image: url(../images/header/bg-header_sm.jpg);
+    background-image: -webkit-image-set(
+      url(../images/header/bg-header_sm.webp) 1x
+    );
+    @include mq(retina) {
+      background-image: url(../images/header/bg-header_sm@2x.jpg);
+      background-image: -webkit-image-set(
+        url(../images/header/bg-header_sm@2x.webp) 2x
+      );
+    }
+  }
+
+  @include mq(tablet) {
+    background-image: url(../images/header/bg-header_md.jpg);
+    background-image: -webkit-image-set(
+      url(../images/header/bg-header_md.webp) 1x
+    );
+    @include mq(retina) {
+      background-image: url(../images/header/bg-header_md@2x.jpg);
+      background-image: -webkit-image-set(
+        url(../images/header/bg-header_md@2x.webp) 2x
+      );
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(../images/header/bg-header_lg.jpg);
+    background-image: -webkit-image-set(
+      url(../images/header/bg-header_lg.webp) 1x
+    );
+    @include mq(retina) {
+      background-image: url(../images/header/bg-header_lg@2x.jpg);
+      background-image: -webkit-image-set(
+        url(../images/header/bg-header_lg@2x.webp) 2x
+      );
+    }
+  }
   &__content {
     /* Rectangle 3 */
 
     /* dark_green */
     padding: 18px 50px 20px 50px;
-    background: #104849;
+
+    background-repeat: no-repeat;
+    background-position: left;
+
+    // background-image: url(../images/header/bg-header_lg.jpg);
   }
 }

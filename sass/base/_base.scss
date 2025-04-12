@@ -5,8 +5,33 @@ body {
 
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.167;
+  font-size: 14px;
+  line-height: 1.143;
 
   color: #000000;
+}
+
+.main-title {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* dark_blue */
+  color: var(--dark-blue-color);
+}
+
+.title {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: left;
+
+  /* dark_blue */
+  color: var(--dark-blue-color);
 }
