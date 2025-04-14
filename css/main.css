@@ -196,8 +196,14 @@ body {
 }
 
 .nav {
+  display: none;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: block;
+  }
 }
 .nav__vraper {
   /* Rectangle 1 */
@@ -233,10 +239,49 @@ body {
 }
 
 .newOnSite {
-  padding: 40px 10px 9px 10px;
   margin-bottom: 20px;
-  background-image: url(../images/main/top_lg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/main/top_lg.jpg);
+}
+@media screen and (min-width: 420px) {
+  .newOnSite {
+    padding: 25px 10px 7px 10px;
+    background-image: url(../images/main/top_sm.jpg);
+    background-image: -webkit-image-set(url(../images/main/top_sm.webp) 1x);
+  }
+}
+@media screen and (min-width: 420px) and (min-device-pixel-ratio: 2), screen and (min-width: 420px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 420px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 420px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 420px) and (min-resolution: 192dpi), screen and (min-width: 420px) and (min-resolution: 2dppx) {
+  .newOnSite {
+    background-image: url(../images/main/top_sm@2x.jpg);
+    background-image: -webkit-image-set(url(../images/main/top_sm@2x.webp) 2x);
+  }
+}
+@media screen and (min-width: 768px) {
+  .newOnSite {
+    padding: 38px 10px 7px 10px;
+    background-image: url(../images/main/top_md.jpg);
+    background-image: -webkit-image-set(url(../images/main/top_md.webp) 1x);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .newOnSite {
+    background-image: url(../images/main/top_md@2x.jpg);
+    background-image: -webkit-image-set(url(../images/main/top_md@2x.webp) 2x);
+  }
+}
+@media screen and (min-width: 1120px) {
+  .newOnSite {
+    padding: 40px 10px 9px 10px;
+    background-image: url(../images/main/top_lg.jpg);
+    background-image: -webkit-image-set(url(../images/main/top_lg.webp) 1x);
+  }
+}
+@media screen and (min-width: 1120px) and (min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1120px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1120px) and (min-resolution: 192dpi), screen and (min-width: 1120px) and (min-resolution: 2dppx) {
+  .newOnSite {
+    background-image: url(../images/main/top_lg@2x.jpg);
+    background-image: -webkit-image-set(url(../images/main/top_lg@2x.webp) 2x);
+  }
 }
 .newOnSite__title {
   /* Нове на сайті */

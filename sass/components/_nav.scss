@@ -1,6 +1,12 @@
 .nav {
+  display: none;
   padding-top: 10px;
   padding-bottom: 20px;
+
+  @include mq(tablet) {
+    display: block;
+  }
+
   &__vraper {
     /* Rectangle 1 */
 

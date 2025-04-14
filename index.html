@@ -94,7 +94,60 @@
               <p class="newContent__item--head-date">12.02.2025</p>
             </li>
           </ul>
-          <img class="newContent__img" src="./images/main/test_lg.jpg" alt="" />
+          <picture>
+            <source
+              srcset="
+                ./images/main/test_lg.webp    1x,
+                ./images/main/test_lg@2x.webp 2x
+              "
+              media="(min-width: 1120px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/main/test_lg.jpg    1x,
+                ./images/main/test_lg@2x.jpg 2x
+              "
+              media="(min-width: 1120px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/main/test_md.webp    1x,
+                ./images/main/test_md@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/main/test_md.jpg    1x,
+                ./images/main/test_md@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/main/test_sm.webp    1x,
+                ./images/main/test_sm@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/main/test_sm@2x.jpg 2x"
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <!-- <img
+              class="tiam-img"
+              src="./images/main/test_lg.jpg"
+              alt="test"
+              width="500"
+              height="293"
+            /> -->
+          </picture>
           <h2 class="newContent__title">
             Бібліотека в інформаційному забезпеченні школи
           </h2>
